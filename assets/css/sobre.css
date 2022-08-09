@@ -1,0 +1,37 @@
+.sobre {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  background-color: #151515;
+  z-index: 0;
+}
+
+.avatar img {
+  margin-right: 100px;
+}
+
+.sobre-conteudo {
+  line-height: 1.5rem;
+  width: 70%;
+}
+
+.sobre-conteudo p,
+.sobre-conteudo img {
+  padding: 5px 0 5px;
+}
+
+.sobre-conteudo p a {
+  color: #ffbb00;
+}
+
+.sobre-conteudo p a:hover {
+  opacity: 0.9;
+}
+
+.sobre-conteudo h2 {
+  text-transform: uppercase;
+}
+
+.sobre-conteudo h3 {
+  margin-top: 50px;
+}

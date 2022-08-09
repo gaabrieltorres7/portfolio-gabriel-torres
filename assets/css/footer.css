@@ -1,0 +1,18 @@
+footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+}
+
+footer span {
+  color: #ffbb00;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+footer span:hover {
+  opacity: 0.8;
+}

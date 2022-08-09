@@ -1,0 +1,88 @@
+main {
+  color: #c4c4c4;
+}
+
+.introducao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8.5% 16%;
+  min-height: 35vh;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+.introducao-conteudo h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.introducao-conteudo h1 span {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #ffbb00;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.introducao-conteudo h1 span::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.8s infinite;
+  color: #c4c4c4;
+}
+
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.introducao-conteudo {
+  width: 70%;
+  padding: 5rem 0;
+}
+
+.introducao-imagem {
+  width: 30%;
+  padding: 5rem 0;
+}
+
+.introducao-imagem img {
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.btn-linkedin img {
+  margin-bottom: 3px;
+}
+
+.btn-github p {
+  margin-right: 10px;
+}

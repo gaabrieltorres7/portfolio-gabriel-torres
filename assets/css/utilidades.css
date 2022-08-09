@@ -1,0 +1,74 @@
+.btn-linkedin,
+.btn-github,
+.btn-curriculo,
+.btn-email {
+  display: flex;
+  align-items: center;
+  padding: 3px 5px 5px;
+  justify-content: space-around;
+  width: 140px;
+  border-radius: 8px;
+  background-color: #121212;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  height: 40px;
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-ver-mais button {
+  border: none;
+  font-family: "Inter", sans-serif;
+  padding: 10px 50px;
+  border-radius: 8px;
+  background-color: #121212;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  height: 40px;
+  transition: ease-in-out 0.3s;
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-linkedin:hover,
+.btn-github:hover,
+.btn-curriculo:hover,
+.btn-email:hover,
+.btn-ver-mais button:hover {
+  background-color: #272727;
+  text-shadow: 1px 1px 3px #ffbb00;
+}
+
+.btn-linkedin::before,
+.btn-email::before,
+.btn-curriculo::before,
+.btn-github::before,
+.btn-ver-mais button::before,
+.projeto-item-breve .breve::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -2px;
+  border-radius: 9px;
+  background: linear-gradient(-45deg, rgba(147, 88, 247, 1), #ffbb00);
+  background-size: 400%;
+  animation: move infinite forwards 4s;
+}
+
+@keyframes move {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
+}

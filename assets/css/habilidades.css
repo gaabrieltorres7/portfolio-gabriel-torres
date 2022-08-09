@@ -1,0 +1,87 @@
+#habilidades {
+  background-color: #151515;
+}
+
+.habilidades {
+  padding-top: 10px;
+}
+
+#habilidades h2 {
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.habilidades {
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  padding-bottom: 70px;
+}
+
+.container-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 45%;
+}
+
+.skill-box {
+  height: 106px;
+  width: 106px;
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: ease 0.3s;
+}
+
+.skill-box:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+.container-descricao {
+  color: #fff;
+  font-size: 1.3rem;
+  max-width: 40%;
+}
+
+.skill-box .icones-habilidades {
+  transition: ease-in-out 0.3s;
+}
+
+.skill-box:hover .icones-habilidades {
+  opacity: 0;
+}
+
+.skill1 {
+  background-image: url(../img/html2.svg);
+}
+
+.skill2 {
+  background-image: url(../img/css2.svg);
+}
+
+.skill3 {
+  background-image: url(../img/js2.svg);
+}
+
+.skill4 {
+  background-image: url(../img/git2.svg);
+}
+
+.skill5 {
+  background-image: url(../img/java2.svg);
+}
+
+.skill6 {
+  background-image: url(../img/sql2.svg);
+}

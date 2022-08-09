@@ -1,0 +1,200 @@
+@media (max-width: 1325px) {
+  .introducao-conteudo h1 {
+    font-size: 1rem;
+  }
+  .introducao-conteudo h1 span {
+    font-size: 2.2rem;
+  }
+
+  .principal {
+    height: 35px;
+  }
+
+  .introducao,
+  .sobre,
+  .projetos,
+  .habilidades {
+    padding: 6.5%;
+  }
+
+  .header-container {
+    padding: 0 6.5%;
+  }
+
+  #projetos h2 {
+    padding-bottom: 40px;
+  }
+
+  #habilidades h2 {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 880px) {
+  .introducao,
+  .sobre,
+  #projetos,
+  #habilidades {
+    padding: 22% 0;
+    text-align: center;
+  }
+
+  .introducao {
+    flex-direction: column;
+    margin-bottom: -100px;
+  }
+
+  .introducao-conteudo {
+    width: 90%;
+  }
+
+  .introducao-imagem {
+    display: none;
+  }
+
+  .sobre {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .sobre h2,
+  .sobre h3 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .avatar {
+    max-width: 80%;
+    margin-left: 60px;
+  }
+
+  .sobre-conteudo {
+    width: 80%;
+  }
+
+  .links {
+    width: 320px;
+    margin: 1rem auto;
+  }
+
+  .projetos-itens {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 5%;
+    margin-bottom: 10rem;
+  }
+
+  #projetos h2 {
+    margin-top: -100px;
+    padding-bottom: 80px;
+  }
+
+  .btn-ver-mais {
+    margin-bottom: 40px;
+  }
+
+  .projeto-item-breve {
+    margin-bottom: -100px;
+  }
+
+  #habilidades h2 {
+    margin-top: -100px;
+  }
+
+  .habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-skills {
+    text-align: center;
+    max-width: 300px;
+    order: 2;
+  }
+  .container-descricao {
+    order: 1;
+    max-width: 300px;
+  }
+}
+
+/* BOTAO MOBILE */
+@media (max-width: 880px) {
+  .header-menu {
+    display: block;
+    position: absolute;
+    width: 30%;
+    top: 50px;
+    right: 0;
+    background-color: #151515;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.6s;
+    z-index: 10;
+  }
+
+  nav.ativo .header-menu {
+    height: 30vh;
+    width: 30vw;
+    visibility: visible;
+  }
+
+  .header-menu a {
+    padding: 0.5rem 0;
+    margin: 0 1rem;
+  }
+
+  .header-menu a::after {
+    width: 108px;
+  }
+
+  .sobre {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .btn-mobile {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    width: 20px;
+    border-top: 2px solid;
+    color: #ffbb00;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  nav.ativo #hamburguer {
+    border-top-color: transparent;
+  }
+
+  nav.ativo #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  nav.ativo #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #hamburguer:hover {
+    opacity: 0.8;
+  }
+}
