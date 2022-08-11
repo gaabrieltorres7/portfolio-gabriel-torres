@@ -87,7 +87,9 @@
 
   #projetos h2 {
     margin-top: -100px;
-    padding-bottom: 80px;
+    margin-left: 30px;
+    padding-bottom: 40px;
+    font-size: 2rem;
   }
 
   .btn-ver-mais {
@@ -100,6 +102,7 @@
 
   #habilidades h2 {
     margin-top: -100px;
+    font-size: 2rem;
   }
 
   .habilidades {
