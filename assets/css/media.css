@@ -1,4 +1,4 @@
-@media (max-width: 1325px) {
+@media (max-width: 1370px) {
   .introducao-conteudo h1 {
     font-size: 1rem;
   }
@@ -14,7 +14,7 @@
   .sobre,
   .projetos,
   .habilidades {
-    padding: 6.5%;
+    padding: 7.5%;
   }
 
   .header-container {
@@ -119,7 +119,7 @@
   }
 }
 
-/* BOTAO MOBILE */
+/* BOTAO HAMBURGUER MOBILE */
 @media (max-width: 880px) {
   .header-menu {
     display: block;

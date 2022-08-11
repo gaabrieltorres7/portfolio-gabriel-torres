@@ -10,23 +10,6 @@ main {
   min-height: 35vh;
 }
 
-@keyframes scroll-down {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -15px, 0);
-  }
-  30% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(0, 10px, 0);
-  }
-}
-
 .introducao-conteudo h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;

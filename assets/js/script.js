@@ -26,7 +26,7 @@ function escreve(element) {
   array.forEach((letra, i) => {
     setTimeout(() => {
       element.innerHTML += letra;
-    }, 150 * i);
+    }, 300 * i);
   });
 }
 
@@ -37,7 +37,6 @@ escreve(nome);
 new SimpleAnime();
 
 //habilidades
-const skills = document.querySelectorAll(".skill-box");
 const descricao = document.querySelector(".texto-descricao");
 const sobreSkill = [
   "<p>HTML</p> <br> <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p> <br>",
@@ -45,17 +44,15 @@ const sobreSkill = [
   "<p>JavaScript</p> <br> <p>É uma linguagem de programação que, juntamente com HTML e CSS, é uma das três principais tecnologias da web.</p> <br>",
   "<p>Git</p> <br> <p>É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software.</p> <br>",
   "<p>Java</p> <br> <p>Java é uma linguagem de programação orientada a objetos. A principal função do Java é construir aplicações em rede, como jogos e programas multiplataforma.</p> <br>",
-  "<p>MySQL</p> <br> <p>Structured Query Language, ou Linguagem de Consulta Estruturada ou SQL, é a linguagem de pesquisa declarativa padrão para banco de dados relacional.</p> <br>",
+  "<p>SQL</p> <br> <p>Structured Query Language, ou Linguagem de Consulta Estruturada ou SQL, é a linguagem de pesquisa declarativa padrão para banco de dados relacional.</p> <br>",
 ];
 
-skills.forEach((elemento, index) => {
-  let index1 = index;
-  let elemento1 = elemento;
-  elemento.addEventListener("mouseover", () => {
-    descricao.innerHTML = `<p>${sobreSkill[index1]} </p>`;
-  });
-  elemento.addEventListener("mouseout", () => {
-    descricao.innerHTML =
-      "/* Passe o mouse por cima de alguma habilidade para ler a descrição */";
-  });
-});
+let contador = 0;
+let x = 4000;
+setInterval(() => {
+  descricao.innerHTML = `<p>${sobreSkill[contador]} </p>`;
+  contador++;
+  if (contador > 5) {
+    contador = 0;
+  }
+}, x);

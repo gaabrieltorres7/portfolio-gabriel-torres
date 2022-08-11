@@ -39,6 +39,13 @@ img {
   min-height: 35vh;
 }
 
+.sobre-conteudo h2,
+#projetos h2,
+#habilidades h2 {
+  font-family: "Press Start 2P", "Inter", Arial;
+  color: #ffbb00;
+}
+
 .btn-mobile {
   display: none;
 }
