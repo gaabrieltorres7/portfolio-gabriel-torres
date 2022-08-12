@@ -205,3 +205,9 @@
     opacity: 0.8;
   }
 }
+
+@media (max-width: 430px) {
+  .introducao-conteudo h1 span {
+    font-size: 2rem;
+  }
+}
