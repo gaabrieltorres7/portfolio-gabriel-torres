@@ -209,5 +209,6 @@
 @media (max-width: 430px) {
   .introducao-conteudo h1 span {
     font-size: 2rem;
+    padding-left: 17px;
   }
 }
