@@ -216,3 +216,10 @@
     font-size: 1.7rem;
   }
 }
+
+@media (max-width: 389px) {
+  nav.ativo .header-menu {
+    height: 25vh;
+    width: 35vw;
+  }
+}
