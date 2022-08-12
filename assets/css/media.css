@@ -143,7 +143,7 @@
   }
 
   nav.ativo .header-menu {
-    height: 30vh;
+    height: 20vh;
     width: 30vw;
     visibility: visible;
   }
@@ -206,9 +206,13 @@
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 423px) {
   .introducao-conteudo h1 span {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-left: 17px;
+  }
+
+  #habilidades h2 {
+    font-size: 1.7rem;
   }
 }
