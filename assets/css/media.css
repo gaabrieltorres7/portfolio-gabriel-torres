@@ -146,6 +146,7 @@
     height: 20vh;
     width: 30vw;
     visibility: visible;
+    overflow-y: auto;
   }
 
   .header-menu a {
