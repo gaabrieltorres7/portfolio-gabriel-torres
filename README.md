@@ -2,4 +2,4 @@
 
 ![portfolio](https://user-images.githubusercontent.com/98062444/184238037-5c59d8c3-9a52-420b-a7fe-6b8e4e9d5f7b.png)
 
-<strong>Criei esse portfólio para compartilhar projetos que desenvolverei durante minha carreira.</strong>
+<strong>Portfolio created to share projects that I'll develop during my career.</strong>
