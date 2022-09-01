@@ -20,6 +20,10 @@
   padding: 5px 0 5px;
 }
 
+.sobre-conteudo > p {
+  margin-top: 10px;
+}
+
 .sobre-conteudo p a {
   color: #ffbb00;
 }
@@ -37,5 +41,5 @@
 }
 
 .links {
-  padding-top: 20px;
+  padding-top: 17px;
 }
